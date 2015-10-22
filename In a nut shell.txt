@@ -1,0 +1,33 @@
+"config"
+Step 1: git config --global user.name "(your name)"	: to know who you are as you commit
+Step 2: git config --global user.email "(your email)"	: to know who you are including your email
+
+
+"Working place" to "staging" to "Local repo":
+Step 1: git init <project>		: project now repository
+Step 2: git add . 			: add all files to staging
+step 3: git commit -m "message"		: snapshot
+
+	git status			: status of files
+	git log				: commit history
+	git diff			: view differences
+	git diff --cached		: differences in staging
+
+
+"Local repo" to "Remote repo":
+Step 1: git remote add (name) (SSH/http from online project)
+	git remote add origin (SSH/http from online project)
+Step 2: git push (name) (branch name)
+	git push origin master
+
+
+"Branch":
+	git branch			: see all existing branches 
+	git branch (new branch name)	: create a new branch name
+	git checkout (existing branch name)	: switch to under this existing branch name
+
+
+"Clone" from remote server to new local computer:
+	git clone (shh/http from online project)	: clone everythings from remote repo to your computer under your master name.
+	git config --global user.name "(your name)"	: do config to new local computer
+	git config --global user.email "(your email)"	: do config to new local computer 
