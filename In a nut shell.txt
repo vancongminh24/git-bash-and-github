@@ -7,7 +7,11 @@ Step 2: git config --global user.email "(your email)"	: to know who you are incl
 Step 1: git init <project>		: project now repository
 Step 2: git add . 			: add all files to staging
 step 3: git commit -m "message"		: snapshot
-
+		/**
+		Change the recent message: git commit --amend -m "new message"
+		If already pushed up, we then add more: git push --force <repository> <branch>
+		Be careful when using push --force. If anyone else has pushed changes to the same branch, those changes will be destroyed. 
+		**/
 	git status			: status of files
 	git log				: commit history
 	git diff			: view differences
