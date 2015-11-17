@@ -7,15 +7,12 @@ Step 2: git config --global user.email "(your email)"	: to know who you are incl
 Step 1: git init <project>		: project now repository
 Step 2: git add . 			: add all files to staging
 step 3: git commit -m "message"		: snapshot
-		/**
-		Change the recent message: git commit --amend -m "new message"
-		If already pushed up, we then add more: git push --force <repository> <branch>
-		Be careful when using push --force. If anyone else has pushed changes to the same branch, those changes will be destroyed. 
-		**/
-	git status			: status of files
-	git log				: commit history
-	git diff			: view differences
-	git diff --cached		: differences in staging
+
+	git commit --amend -m "new message"	: Change the recent message from local repo
+	git status				: status of files
+	git log					: commit history
+	git diff				: view differences
+	git diff --cached			: differences in staging
 
 
 "Local repo" to "Remote repo":
@@ -23,11 +20,12 @@ Step 1: git remote add (name) (SSH/http from online project)
 	git remote add origin (SSH/http from online project)
 Step 2: git push (name) (branch name)
 	git push origin master
-
+	
+	git push --force <repository> <branch>	: change the recent message from remote repo
 
 "Branch":
-	git branch			: see all existing branches 
-	git branch (new branch name)	: create a new branch name
+	git branch				: see all existing branches 
+	git branch (new branch name)		: create a new branch name
 	git checkout (existing branch name)	: switch to under this existing branch name
 
 
